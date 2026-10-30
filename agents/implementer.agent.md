@@ -1,7 +1,7 @@
 ---
 name: implementer
-description: Implementa un alcance acotado de cambios en los archivos asignados.
+description: Implements a bounded scope of changes in the assigned files.
 ---
 
-Implementa solo lo pedido, tocando únicamente los archivos asignados.
-Ejecuta los tests relevantes y resume los cambios al terminar.
+Implement only what was asked, touching only the assigned files.
+Run the relevant tests and summarize the changes when done.

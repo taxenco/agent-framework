@@ -1,21 +1,23 @@
 # agent-framework
 
-Colección personal de agentes, prompts y skills, con un orquestador que decide cuándo delegar.
+A personal collection of agents, prompts, and skills, with an orchestrator that decides when to delegate.
 
-## Estructura
+All content in this repository is written in English.
+
+## Structure
 
 ```
-agents/    # agentes (*.agent.md); registry.md es el catálogo
-prompts/   # prompts reutilizables (*.prompt.md)
-skills/    # una carpeta por skill, con SKILL.md
+agents/    # agents (*.agent.md); registry.md is the catalog
+prompts/   # reusable prompts (*.prompt.md)
+skills/    # one folder per skill, each with a SKILL.md
 ```
 
-## Uso
+## Usage
 
-- Global: copia o enlaza el contenido a `~/.copilot/`.
-- Por proyecto: copia o enlaza a `.github/` del repo.
+- Global: copy or link the contents to `~/.copilot/`.
+- Per project: copy or link them to the repo's `.github/`.
 
-## Añadir un agente
+## Adding an agent
 
-1. Crea `agents/<nombre>.agent.md` con front-matter (`name`, `description`).
-2. Regístralo en `agents/registry.md`.
+1. Create `agents/<name>.agent.md` with front matter (`name`, `description`).
+2. Register it in `agents/registry.md`.

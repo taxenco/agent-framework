@@ -1,8 +1,8 @@
-# Registro de agentes
+# Agent registry
 
-| Agente | Cuándo usarlo | Entrega |
+| Agent | When to use | Deliverable |
 |---|---|---|
-| orchestrator | Punto de entrada; decide estrategia y delega | Resultado integrado |
-| planner | Tarea grande o ambigua que necesita plan | Plan con pasos y dependencias |
-| implementer | Implementar un alcance acotado | Cambios en archivos asignados |
-| reviewer | Tras cambios significativos | Lista de problemas o aprobación |
+| orchestrator | Entry point; decides strategy and delegates | Integrated result |
+| planner | Large or ambiguous task that needs a plan | Plan with steps and dependencies |
+| implementer | Implement a bounded scope | Changes in assigned files |
+| reviewer | After significant changes | List of issues or approval |
