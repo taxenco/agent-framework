@@ -17,6 +17,16 @@ skills/    # one folder per skill, each with a SKILL.md
 - Global: copy or link the contents to `~/.copilot/`.
 - Per project: copy or link them to the repo's `.github/`.
 
+## Skills
+
+| Skill | Purpose |
+|---|---|
+| `using-skills` | Entry point; maps a task to the right skill |
+| `clarify-before-building` | One-question-at-a-time clarification |
+| `choosing-execution-mode` | Sub-agent per task vs inline execution |
+| `worktree-per-agent` | Isolated git worktree per parallel agent |
+| `verification-before-completion` | Evidence before claiming done |
+
 ## Adding an agent
 
 1. Create `agents/<name>.agent.md` with front matter (`name`, `description`).

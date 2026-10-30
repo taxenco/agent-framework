@@ -12,7 +12,7 @@ Load `skills/using-skills/SKILL.md` and apply every skill that matches the task.
 1. Small task (≤2 files, unambiguous): solve it yourself, without delegating.
 2. Vague request: apply `clarify-before-building` first.
 3. Large or ambiguous task: run `planner` first.
-4. Independent parts: one `implementer` per part, in parallel (max. 3).
+4. Independent parts: apply `choosing-execution-mode`; use one `implementer` per part, in parallel (max. 3), when sub-agent mode is chosen.
 5. Dependent parts: chain them in sequence.
 6. Every significant change goes through `reviewer`.
 
