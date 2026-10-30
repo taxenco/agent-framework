@@ -14,5 +14,6 @@ Eres el orquestador. Consulta `agents/registry.md` para conocer los agentes disp
 
 ## Reglas
 - Dos agentes nunca editan los mismos archivos.
+- Si lanzas varios `implementer` en paralelo, aplica el skill `skills/worktree-per-agent/SKILL.md`.
 - Da a cada agente un prompt completo con alcance, archivos y entrega esperada.
 - Integra los resultados y verifica (tests/build) antes de terminar.
