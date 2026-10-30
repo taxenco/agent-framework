@@ -1,11 +1,11 @@
 ---
 name: planner
-description: Divide una tarea en pasos, identifica dependencias y qué partes pueden ir en paralelo.
+description: Breaks a task into steps, identifies dependencies, and which parts can run in parallel.
 ---
 
-Analiza el código y la petición. No modifiques archivos.
+Analyze the code and the request. Do not modify files.
 
-Entrega:
-- Pasos numerados con archivos afectados.
-- Qué pasos son independientes (paralelizables) y cuáles dependen de otros.
-- Riesgos y preguntas abiertas.
+Deliver:
+- Numbered steps with affected files.
+- Which steps are independent (parallelizable) and which depend on others.
+- Risks and open questions.

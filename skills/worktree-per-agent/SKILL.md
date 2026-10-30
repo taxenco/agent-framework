@@ -1,41 +1,41 @@
 ---
 name: worktree-per-agent
-description: Da a cada agente paralelo su propio git worktree y rama para evitar conflictos de archivos. Úsalo al lanzar varios implementer a la vez.
+description: Gives each parallel agent its own git worktree and branch to avoid file conflicts. Use when launching several implementer agents at once.
 ---
 
-# Worktree por agente
+# Worktree per agent
 
-Cada agente que edita código en paralelo trabaja en un worktree aislado, nunca en el checkout principal.
+Every agent that edits code in parallel works in an isolated worktree, never in the main checkout.
 
-## Crear (orquestador, antes de lanzar el agente)
-
-```bash
-git worktree add ../wt-<tarea> -b agent/<tarea> main
-```
-
-- Un worktree y una rama por agente: `agent/<tarea>`.
-- El prompt del agente debe indicar su ruta `../wt-<tarea>` como directorio de trabajo.
-
-## Reglas para el agente
-
-- Trabaja solo dentro de su worktree y toca solo los archivos asignados.
-- Haz commits pequeños en su rama; no hagas push a `main`.
-- Ejecuta los tests relevantes antes de terminar.
-- Entrega: nombre de la rama y resumen de los cambios.
-
-## Integrar (orquestador)
-
-1. Pasa el `reviewer` sobre cada rama.
-2. Fusiona una a una: `git merge --no-ff agent/<tarea>`.
-3. Ejecuta tests tras cada merge; si hay conflicto, resuélvelo tú, no el agente.
-
-## Limpiar
+## Create (orchestrator, before launching the agent)
 
 ```bash
-git worktree remove ../wt-<tarea>
-git branch -d agent/<tarea>
+git worktree add ../wt-<task> -b agent/<task> main
 ```
 
-## Cuándo no usarlo
+- One worktree and one branch per agent: `agent/<task>`.
+- The agent's prompt must state its path `../wt-<task>` as the working directory.
 
-Tareas de un solo agente o cambios de ≤2 archivos: trabaja directamente en la rama actual.
+## Rules for the agent
+
+- Work only inside its worktree and touch only the assigned files.
+- Make small commits on its branch; never push to `main`.
+- Run the relevant tests before finishing.
+- Deliverable: branch name and a summary of the changes.
+
+## Integrate (orchestrator)
+
+1. Run the `reviewer` on each branch.
+2. Merge one at a time: `git merge --no-ff agent/<task>`.
+3. Run tests after each merge; if there is a conflict, resolve it yourself, not the agent.
+
+## Clean up
+
+```bash
+git worktree remove ../wt-<task>
+git branch -d agent/<task>
+```
+
+## When not to use it
+
+Single-agent tasks or changes of ≤2 files: work directly on the current branch.
