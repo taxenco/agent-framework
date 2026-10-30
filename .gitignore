@@ -1,0 +1,16 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+
+# Agent worktrees (see skills/worktree-per-agent)
+wt-*/
+
+# Secrets and local config
+.env
+.env.*
+*.local
