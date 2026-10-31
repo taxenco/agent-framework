@@ -7,10 +7,13 @@ All content in this repository is written in English.
 ## Structure
 
 ```
-agents/    # agents (*.agent.md); registry.md is the catalog
-prompts/   # reusable prompts (*.prompt.md)
-skills/    # one folder per skill, each with a SKILL.md
+agents/      # agents (*.agent.md); registry.md is the catalog
+prompts/     # reusable prompts (*.prompt.md)
+skills/      # one folder per skill, each with a SKILL.md
+templates/   # starting points for new agents and skills
 ```
+
+Rules for adding or changing anything live in [CONVENTIONS.md](CONVENTIONS.md).
 
 ## Usage
 
@@ -29,5 +32,9 @@ skills/    # one folder per skill, each with a SKILL.md
 
 ## Adding an agent
 
-1. Create `agents/<name>.agent.md` with front matter (`name`, `description`).
+1. Copy `templates/agent.agent.md` to `agents/<name>.agent.md` and fill it in.
 2. Register it in `agents/registry.md`.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
