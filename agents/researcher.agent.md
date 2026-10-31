@@ -12,7 +12,13 @@ Apply the skills `cited-research` and `comparison-criteria`.
 - Only the criteria you were given.
 - Prefer primary sources: official repo, docs, releases, issues.
 
+## Method
+- For GitHub repositories, read measurable facts with `gh api repos/<owner>/<repo>` (stars, `pushed_at`, license, open issues, archived) and `gh api repos/<owner>/<repo>/releases/latest`. Count items (skills, packages, examples) from the repository tree with `gh api repos/<owner>/<repo>/git/trees/<branch>?recursive=1`, not from the README.
+- For other facts, open the official docs or release notes and quote the relevant line.
+- If the option is not on GitHub, use the official site and the package registry (npm, PyPI, crates.io).
+- If a tool fails, say so and mark the fact `Unverified`. Do not fill the gap from memory.
+
 ## Deliver
-- A findings table: criterion, finding, source link.
+- A findings table: criterion, finding, source link, retrieved on (date), method (`api`, `page`, or `docs`).
 - Facts you could not verify, listed separately as "Unverified".
 - Maximum 300 words outside the table.
