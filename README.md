@@ -13,7 +13,7 @@ skills/      # one folder per skill, each with a SKILL.md
 templates/   # starting points for new agents and skills
 ```
 
-Rules for adding or changing anything live in [CONVENTIONS.md](CONVENTIONS.md).
+Rules for adding or changing anything live in [CONVENTIONS.md](CONVENTIONS.md). How the pieces fit together is in [ARCHITECTURE.md](ARCHITECTURE.md); read it before changing the framework.
 
 ## Usage
 
@@ -24,6 +24,8 @@ Rules for adding or changing anything live in [CONVENTIONS.md](CONVENTIONS.md).
 
 | Skill | Purpose |
 |---|---|
+| `route-code` | Route for code changes (plan, implement, review) |
+| `route-research` | Route for comparing options (parallel researchers, synthesizer) |
 | `using-skills` | Entry point; maps a task to the right skill |
 | `clarify-before-building` | One-question-at-a-time clarification |
 | `choosing-execution-mode` | Sub-agent per task vs inline execution |
@@ -36,7 +38,7 @@ Rules for adding or changing anything live in [CONVENTIONS.md](CONVENTIONS.md).
 
 | Prompt | Purpose |
 |---|---|
-| `research-compare` | Triggers the full compare-options flow (researchers in parallel, then synthesizer) |
+| `research-compare` | Triggers the full compare-options flow (`route-research`) |
 
 ## Adding an agent
 

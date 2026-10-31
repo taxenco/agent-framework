@@ -1,6 +1,6 @@
 # Conventions
 
-These rules are the stable foundation of the repository. Change them deliberately, not casually.
+These rules are the stable foundation of the repository. Change them deliberately, not casually. Read [ARCHITECTURE.md](ARCHITECTURE.md) before changing the structure.
 
 ## Language
 All content is written in English.
@@ -35,7 +35,7 @@ The description is what routes the agent to the file, so state both purpose and 
 
 ## Registration
 - New agent: add a row to `agents/registry.md`.
-- New skill: add a row to `skills/using-skills/SKILL.md` and to the table in `README.md`.
+- New skill or route: add a row to `skills/using-skills/SKILL.md` and to the table in `README.md`.
 
 ## Changes
 - Work on a branch and merge through a pull request.
