@@ -2,7 +2,7 @@
 
 | Agent | When to use | Deliverable |
 |---|---|---|
-| orchestrator | Entry point; decides strategy and delegates (code route or research route) | Integrated result |
+| orchestrator | Entry point; picks a route and enforces global rules | Integrated result |
 | planner | Large or ambiguous task that needs a plan | Plan with steps and dependencies |
 | implementer | Implement a bounded scope | Changes in assigned files |
 | reviewer | After significant changes | List of issues or approval |
