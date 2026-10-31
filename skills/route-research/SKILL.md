@@ -12,7 +12,7 @@ Triggered by the prompt `research-compare` or any request to compare options.
 2. Apply the skill `comparison-criteria` and fix one criteria list for all options.
 3. Launch one `researcher` per option, in parallel (max. 5), each with the same criteria. Researchers only read, so no worktrees are needed.
 4. Pass all reports to the `synthesizer`.
-5. Check the result against the skill `cited-research`: every claim has a source link and unverified claims are listed. Send it back to the `synthesizer` if not.
+5. Check the result against the skill `cited-research`: every claim has a source link, the claims behind the recommendation are marked verified or not verified, and unverified claims are listed. Send it back to the `synthesizer` if not.
 6. If a researcher fails or returns no sources, retry once, then report the option as "not researched".
 
 ## Agents used
