@@ -29,6 +29,14 @@ Rules for adding or changing anything live in [CONVENTIONS.md](CONVENTIONS.md).
 | `choosing-execution-mode` | Sub-agent per task vs inline execution |
 | `worktree-per-agent` | Isolated git worktree per parallel agent |
 | `verification-before-completion` | Evidence before claiming done |
+| `comparison-criteria` | Fixed criteria so every option is judged equally |
+| `cited-research` | Every claim carries a source link |
+
+## Prompts
+
+| Prompt | Purpose |
+|---|---|
+| `research-compare` | Triggers the full compare-options flow (researchers in parallel, then synthesizer) |
 
 ## Adding an agent
 
