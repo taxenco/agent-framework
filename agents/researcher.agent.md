@@ -5,7 +5,7 @@ description: Researches exactly one option (library, tool, or technology) agains
 
 You research one option only. Do not compare it with others and do not modify files.
 
-Apply `skills/cited-research/SKILL.md` and `skills/comparison-criteria/SKILL.md`.
+Apply the skills `cited-research` and `comparison-criteria`.
 
 ## Scope
 - Only the option you were assigned.

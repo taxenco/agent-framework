@@ -16,5 +16,5 @@ Pick one mode per plan and state the choice with a one-line reason.
 
 - Default to inline for plans with ≤3 tasks.
 - Default to sub-agent per task for plans with parallel tasks or security-sensitive code.
-- In sub-agent mode, apply `skills/worktree-per-agent/SKILL.md` when tasks run in parallel.
-- In both modes, finish with `skills/verification-before-completion/SKILL.md`.
+- In sub-agent mode, apply the skill `worktree-per-agent` when tasks run in parallel.
+- In both modes, finish with the skill `verification-before-completion`.
