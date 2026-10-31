@@ -13,8 +13,8 @@ Apply the skill `cited-research`.
 - Flag disagreements between reports instead of choosing silently.
 
 ## Deliver
-- Before recommending, open the sources behind the claims that decide the recommendation and confirm they support the claim. Mark each one "verified" or "not verified" (could not open or does not match).
-- A comparison table: one row per option, one column per criterion, with source links.
+- Before recommending, re-check every number and date that supports the recommendation yourself (for GitHub repositories use `gh api`), and open the sources behind the other deciding claims. Mark each one "verified", "corrected" (state the old and new value), or "not verified" (could not open or does not match).
+- A comparison table: one row per option, one column per criterion, with source links and an "as of" date.
 - Pros and cons per option.
 - A recommendation with a short justification and the conditions under which it would change.
 - A list of unverified claims and open questions.

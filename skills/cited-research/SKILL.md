@@ -14,6 +14,8 @@ description: Requires every factual claim in research output to carry a source l
 5. Do not invent numbers, versions, dates, or features. Say "not found" instead.
 6. Note the date or version a fact refers to when it can change (stars, releases, pricing).
 7. If sources disagree, report both and name the sources.
+8. Get measurable facts (stars, dates, versions, license, counts) from a tool or API, not from page text or memory, and write the retrieval date next to them.
+9. Never use a search summary or an AI-generated answer as a source. Open the page it points to.
 
 ## Format
 
