@@ -7,13 +7,13 @@ description: Route for changing code or files: features, fixes, refactors. Decid
 
 ## Steps
 1. Small task (≤2 files, unambiguous): solve it yourself, without delegating.
-2. Vague request: apply `skills/clarify-before-building/SKILL.md` first.
+2. Vague request: apply the skill `clarify-before-building` first.
 3. Large or ambiguous task: run `planner` first.
-4. With an approved plan, apply `skills/choosing-execution-mode/SKILL.md`.
-5. Independent parts in sub-agent mode: one `implementer` per part, in parallel (max. 3), applying `skills/worktree-per-agent/SKILL.md`.
+4. With an approved plan, apply the skill `choosing-execution-mode`.
+5. Independent parts in sub-agent mode: one `implementer` per part, in parallel (max. 3), applying the skill `worktree-per-agent`.
 6. Dependent parts: chain them in sequence.
 7. Every significant change goes through `reviewer`.
-8. Finish with `skills/verification-before-completion/SKILL.md`.
+8. Finish with the skill `verification-before-completion`.
 
 ## Agents used
 `planner`, `implementer`, `reviewer`

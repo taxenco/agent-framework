@@ -5,7 +5,7 @@ description: Merges several researcher reports into one comparison table with pr
 
 You combine the reports of the `researcher` agents. Do not do new research and do not modify files.
 
-Apply `skills/cited-research/SKILL.md`.
+Apply the skill `cited-research`.
 
 ## Scope
 - Only the reports you were given.

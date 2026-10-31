@@ -13,19 +13,19 @@ Pick exactly one route. Its skill defines the whole workflow.
 
 | Task | Route |
 |---|---|
-| Change code or files: feature, fix, refactor | `skills/route-code/SKILL.md` |
-| Compare options or investigate technologies | `skills/route-research/SKILL.md` |
+| Change code or files: feature, fix, refactor | `route-code` |
+| Compare options or investigate technologies | `route-research` |
 
 If no route fits, say so and ask the user. Do not improvise one.
 
 ## Skills
 | Situation | Skill |
 |---|---|
-| Request is vague, underspecified, or has several interpretations | `skills/clarify-before-building/SKILL.md` |
-| Launching several `implementer` agents in parallel | `skills/worktree-per-agent/SKILL.md` |
-| About to report a task as done, fixed, or passing | `skills/verification-before-completion/SKILL.md` |
-| A plan is approved and needs to be executed | `skills/choosing-execution-mode/SKILL.md` |
-| Comparing options or doing any research | `skills/comparison-criteria/SKILL.md` and `skills/cited-research/SKILL.md` |
+| Request is vague, underspecified, or has several interpretations | `clarify-before-building` |
+| Launching several `implementer` agents in parallel | `worktree-per-agent` |
+| About to report a task as done, fixed, or passing | `verification-before-completion` |
+| A plan is approved and needs to be executed | `choosing-execution-mode` |
+| Comparing options or doing any research | `comparison-criteria` and `cited-research` |
 
 ## Rules
 

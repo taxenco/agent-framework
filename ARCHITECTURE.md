@@ -39,7 +39,8 @@ using-skills            Routes table + Skills table
 5. **Skills are referenced, not copied.** If text is needed in two places, put it in a skill and link to it.
 6. **Evidence before "done".** Every route ends with `verification-before-completion`. Research output additionally follows `cited-research`.
 7. **Parallel agents must not collide.** Agents that edit files use `worktree-per-agent`. Read-only agents (researchers) need no isolation.
-8. **Everything is written in English.**
+9. **Reference by name, not by path.** Agents, skills, and prompts refer to each other by name so they work once installed globally or in another project.
+10. **Everything is written in English.**
 
 ## Known risks
 
@@ -53,7 +54,7 @@ using-skills            Routes table + Skills table
 |---|---|
 | A route | Create `skills/route-<name>/SKILL.md` from `templates/SKILL.md`; add a row to the Routes table in `using-skills` and to `README.md`. Do not edit the orchestrator. |
 | A skill | Create `skills/<name>/SKILL.md`; add a row to the Skills table in `using-skills` and to `README.md`. |
-| An agent | Create `agents/<name>.agent.md` from `templates/agent.agent.md`; add a row to `agents/registry.md`. List it under "Agents used" in the route that calls it. |
+| An agent | Create `agents/<name>.agent.md` from `templates/agent.agent.md`; add a row to `REGISTRY.md`. List it under "Agents used" in the route that calls it. |
 | A prompt | Create `prompts/<name>.prompt.md` that points to a route; add a row to `README.md`. |
 
 ## Changing this document

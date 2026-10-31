@@ -7,18 +7,21 @@ All content in this repository is written in English.
 ## Structure
 
 ```
-agents/      # agents (*.agent.md); registry.md is the catalog
+agents/      # agents (*.agent.md) only
 prompts/     # reusable prompts (*.prompt.md)
 skills/      # one folder per skill, each with a SKILL.md
 templates/   # starting points for new agents and skills
+scripts/     # install.ps1 links agents and skills into ~/.copilot
+REGISTRY.md  # catalog of agents
 ```
 
 Rules for adding or changing anything live in [CONVENTIONS.md](CONVENTIONS.md). How the pieces fit together is in [ARCHITECTURE.md](ARCHITECTURE.md); read it before changing the framework.
 
 ## Usage
 
-- Global: copy or link the contents to `~/.copilot/`.
-- Per project: copy or link them to the repo's `.github/`.
+- Global (recommended): run `.\scripts\install.ps1`. It links `agents/` and each skill into `~/.copilot/` with junctions, so edits in this repo apply immediately. Re-run it after adding a skill or moving the repo.
+- Per project: copy or link `agents/` and `skills/` to the repo's `.github/agents` and `.github/skills`.
+- Prompts are plain text: copy the contents of a file from `prompts/`, fill in the placeholders, and paste it into the chat.
 
 ## Skills
 
@@ -43,7 +46,7 @@ Rules for adding or changing anything live in [CONVENTIONS.md](CONVENTIONS.md). 
 ## Adding an agent
 
 1. Copy `templates/agent.agent.md` to `agents/<name>.agent.md` and fill it in.
-2. Register it in `agents/registry.md`.
+2. Register it in `REGISTRY.md`.
 
 ## License
 
