@@ -13,6 +13,7 @@ Before starting any task, check this table and load every skill that applies. Sk
 | Launching several `implementer` agents in parallel | `skills/worktree-per-agent/SKILL.md` |
 | About to report a task as done, fixed, or passing | `skills/verification-before-completion/SKILL.md` |
 | A plan is approved and needs to be executed | `skills/choosing-execution-mode/SKILL.md` |
+| Comparing options or doing any research | `skills/comparison-criteria/SKILL.md` and `skills/cited-research/SKILL.md` |
 
 ## Rules
 
